@@ -5,9 +5,7 @@
 	<link rel="icon" type="image/x-icon" href="https://i1.sndcdn.com/avatars-799UJGNuZ6LHMFEZ-KjZOoA-t500x500.jpg">
 </head>
 <body>
-<link href='https://fonts.googleapis.com/css?family=Comic Neue' rel='stylesheet'>
 	<style>
-		body {font-family: 'Comic Neue'; padding: 0px;}
 		html, body {
             height: 100%;
             margin: 0;
@@ -35,6 +33,7 @@
 			cursor: pointer;
 			border-radius: 12px;
 			transition-duration: 0.4s;
+
 		}
 		
 		.button:hover
@@ -42,22 +41,31 @@
 			background-color: rgba(0, 0, 0, .1);
 			
 		}	
+		.flex-container 
+		{
+			display: flex;
+			flex-wrap: nowrap;
+			align-items: center;
+			justify-content: center;
+			width: auto;
+			height: auto; 
+		}	
 		
 	</style>
 
 	<div class="my-block">
-		<p style="color:black; font-size: 34px; text-align: center; margin: 20px; font-family: comic neue;"> Liam Kornoely </p>
-		<img src="https://i1.sndcdn.com/avatars-799UJGNuZ6LHMFEZ-KjZOoA-t500x500.jpg" alt="ahh" style="height: 120px; width: 120px;">
+		<p style="color:black; font-size: 1000%; text-align: center; margin: 20px;"> Liam Kornoely </p>
+		<img src="https://i1.sndcdn.com/avatars-799UJGNuZ6LHMFEZ-KjZOoA-t500x500.jpg" alt="ahh" style="height: 15%; width: 15%;">
 		<div class="center">
 			<div class="flex-container">
-				<div class="button">
-					<a href="CompositionMainPage.html">Music Composition</a>
+				<div>
+					<a href="CompositionMainPage.html" class="button"> Music Composition</a>
 				</div>
-				<div class="button"> 
-					<a href="RecCenterMainPage.html">Rec Center</a>
+				<div> 
+					<a href="RecCenterMainPage.html" class="button"> Campus Recreation</a>
 				</div>
-				<div class="button">
-					<a href="MarchingArtsMainPage.html">Marching Arts</a>
+				<div>
+					<a href="MarchingArtsMainPage.html" class="button"> Marching Arts</a>
 				</div>
 			</div>
 		</div>
