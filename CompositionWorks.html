@@ -9,7 +9,7 @@
 	.flex-container 
 	{
 	  display: flex;
-	  flex-wrap: wrap;
+	  flex-wrap: nowrap;
 	  align-items: left;
 	  justify-content: left;
 	}	
@@ -47,9 +47,9 @@
 	  border: none;
 	  outline: none;
 	  cursor: pointer;
-	  padding: 14px 16px;
+	  padding: 1% 1%;
 	  transition: 0.3s;
-	  font-size: 17px;
+	  font-size: auto;
 	}
 
 	/* Change background color of buttons on hover */
@@ -81,7 +81,7 @@
 	}
 </style>
 <body>
-	<div class="flex-container" style="align-items: center; justify-content: center;">
+	<div class="flex-container" style="align-items: center; justify-content: center; flex-wrap: nowrap;">
 		<div class="button" style="margin: 15px;"> <!-- Recordings -->
 			<a href="CompositionWorks.html"> Works </a>
 		</div>
@@ -107,7 +107,7 @@
 	
 <!-- small ensemble works -->
 	<div id="smallEns" class="tabcontent">		
-		<div style="border: 2px; solid; border-style: ridge; margin: 10px;">
+		<div style="border: 2px; solid; border-style: ridge; margin: 20px;">
 			<p style="font-size: 20px; margin:20px; text-align: center;"><b>Brass quintets</b></p>
 
 <!--		
@@ -149,11 +149,32 @@
 				</div>
 			</div>
 		</div>
+		<div style="border: 2px; solid; border-style: ridge; margin: 20px;">
+		<p style="font-size: 20px; margin:20px; text-align: center;"><b>Miscellaneous</b></p>
+<!-- Snoozle -->
+		<div class="flex-container" style="border: 2px solid; border-style: outset; width: 95%; background-color: #cccbca;">
+				<div>
+					<img src="Assets/SnoozleCover.png" alt="Snoozle Cover" style="height:550px; width: 450px;">
+				</div>
+				<div style="margin: 10px; width: 50%;">
+					<p style="font-size: 20px; margin: 20px;"><b>Snoozle (2022)</b></p>
+					<p style="font-size: 15px; margin: 20px;">d: 13:00</p>
+					<p style="font-size: 15px; margin: 10px;"><i>"Snoozle" is a captivating harp solo that delves into the realm of sleep, exploring different facets of the restful state through four distinct movements: "Reverie," "Zizz," "Torpid," and "Glaze." Each movement unfolds with its own unique character, inviting the listener to experience the various nuances of sleep through the delicate and expressive language of the harp.</i></p>
+					<audio controls>
+						<source src="Assets/SnoozleRecording.mp3" type="audio/mpeg">
+					</audio>
+					<p style="font-size: 10px; margin: 5px;"><i>Performed by Rhapsody Bubsy</i></p>
+					<div>
+						<a href="Assets/Scores/SnoozleFinal-1.pdf" download target="_blank" style="margin: 5px;">View the Score</a>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 <!-- large ensemble works -->
 	<div id="largEns" class="tabcontent">
 		<div style="border: 2px; solid; border-style: ridge; margin: 10px;">
-			<p style="font-size: 20px; margin:20px; text-align: center;"><b>Band Works</b></p>
+			<p style="font-size: 20px; margin:20px; text-align: center;"><b>Concert Band Works</b></p>
 			
 <!-- An Old Gold Star -->
 			<div class="flex-container" style="border: 2px solid; border-style: outset; margin: 30px; background-color: #cccbca;">
@@ -193,7 +214,7 @@
 		</div>
 	
 		<div style="border: 2px; solid; border-style: ridge; margin: 10px;">
-			<p style="font-size: 20px; margin:20px; text-align: center;"><b>Orcestra Works</b></p>	
+			<p style="font-size: 20px; margin:20px; text-align: center;"><b>Orchestra Works</b></p>	
 
 <!-- Space cadet -->
 			<div class="flex-container" style="border: 2px solid; border-style: outset; margin: 30px; background-color: #cccbca;">
@@ -225,7 +246,7 @@
 				<p style="font-size: 20px; margin: 20px;"><b>Hyper Train(2023)</b></p>
 				<p style="font-size: 15px; margin: 20px;">d: 7:00</p>
 				<p style="font-size: 15px; margin: 10px;"><i>“Hyper Train” is an exhilarating and dynamic solo piece for mellophone, showcasing the virtuosity of the performer and the unconventional instrument. This composition takes the listener on a thrilling musical journey, evoking the sensation of a high-speed train hurtling through an ever-changing landscape of sound.</i></p>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/JFTzLTgxY8Q?si=Nuq9bez0a0E5vXoZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				<iframe" width="560" height="315" src="https://www.youtube.com/embed/JFTzLTgxY8Q?si=GwwYCbXf9Bsbz6BD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 				<p style="font-size: 10px; margin: 5px;"><i>Perfromed by: Kate Warren</i></p>
 				<div>
 					<a href="https://drive.google.com/file/d/1CEq-v8R9ixS4AMl76P1toTI4SXQuKtZU/view?usp=sharing" target="_blank" style="margin: 5px;">View the Score</a>
@@ -248,7 +269,7 @@
 			</div>
 		</div>
 
-<!-- WInters First Snow -->
+<!-- Winters First Snow -->
 		<div class="flex-container" style="border: 2px solid; border-style: outset; margin: 30px; background-color: #cccbca;">
 			<div>
 				<img src="Assets/Pn4Fe1HcK8LTSCQNafEU--1--p59c9.jpg" alt="Winters Fitst Snow Cover" style="height: 330px; width: 330px; height-max: 100%;">
