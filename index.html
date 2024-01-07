@@ -12,7 +12,6 @@
             padding: 0;
             width: 100%;
         }
-
         body {
             display: table;
         }
@@ -23,7 +22,6 @@
         }
 		.button
 		{
-			background-color: white;
 			border: 1px solid black;
 			color: black;
 			padding: 20px;
@@ -34,13 +32,12 @@
 			border-radius: 12px;
 			transition-duration: 0.4s;
 			width: 200px;
-
+			opacity: .5;
 		}
-		
 		.button:hover
 		{
 			background-color: rgba(0, 0, 0, .1);
-			
+			opacity: 1;
 		}	
 		.flex-container 
 		{
@@ -57,6 +54,14 @@
 			height: auto;
 			min-width: 300px;
 		}
+		span
+		{
+			border: 4px solid white;
+			border-radius: 12px;
+			background-color: white;
+			padding 20px;
+			opacity: .75;
+		{
 	</style>
 	</div>
 	<div class="my-block">
@@ -65,13 +70,13 @@
 		<div class="center">
 			<div class="flex-container">
 				<div>
-					<a href="CompositionMainPage.html" class="button"> Music Composition</a>
+					<a href="CompositionMainPage.html" class="button" style="background: url(Assets/sheet-music-background.jpg) no-repeat; background-size: cover;"><b> <span>Music Composition</span></b></a>
 				</div>
 				<div> 
-					<a href="RecCenterMainPage.html" class="button"> Campus Recreation</a>
+					<a href="RecCenterMainPage.html" class="button" style="background: url(Assets/depositphotos_42427759-stock-photo-olympic-swimming-pool-lanes.webp) no-repeat; background-size: cover;"><b> <span>Campus Recreation</span></b></a>
 				</div>
 				<div>
-					<a href="MarchingArtsMainPage.html" class="button"> Marching Arts</a>
+					<a href="MarchingArtsMainPage.html" class="button" style="background: url(Assets/360_F_26362713_mLZxa11IVoNFxszpgEkY0LfDA0ubFTrs.jpg) no-repeat; background-size: cover;"> <b><span>Marching Arts</span></b></a>
 				</div>
 			</div>
 		</div>
