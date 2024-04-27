@@ -3,7 +3,9 @@
 <head>
 	<title>Liam Kornoely Marching arts</title>
 	<link rel="icon" type="image/x-icon" href="https://i1.sndcdn.com/avatars-799UJGNuZ6LHMFEZ-KjZOoA-t500x500.jpg">
-</head>	
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slideshow</title>
 <style>
 	.center 
 	{
@@ -25,8 +27,43 @@
 	  flex-wrap: nowrap;
 	  align-items: center;
 	  justify-content: center;
-	}	
+	}
+	
+/* Styling for the slideshow container */
+        .slideshow-container {
+            position: relative;
+            max-width: 600px; /* Adjust as needed */
+            margin: 0 auto; /* Center the slideshow horizontally */
+            border: 2px solid #ccc; /* Gray border */
+            border-radius: 10px; /* Rounded corners */
+            overflow: hidden;
+        }
+
+        /* Styling for the slideshow images */
+        .slideshow-image {
+            display: none;
+            width: 300px;
+            height: 400x;
+			transition: opacity 1s ease-in-out;
+        }
+
+        /* Styling for the slideshow navigation dots */
+        .dot {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin: 0 8px;
+            background-color: #bbb;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        /* Active dot styling */
+        .active {
+            background-color: #717171;
+        }	
 </style>
+</head>
 
 <body style="background-color: black;">
 	<!-- header -->
@@ -47,16 +84,51 @@
 		<div style="background-color: #4d4f54; margin: 20px; border-style: solid; border-color: #a1a09f; border-radius: 8px;">
 			<p style= "color: white; font-size: 40px; text-align: center;"><i>My Marching Experience</i></p>
 			<div class="flex-container" style="flex-wrap: wrap;">
+			<p style= "color: white; font-size: 20px; text-align: center; margin: 5px;"> 
+			I began my marching career in high school at Jenison High School. I played lead trumpet and was a featured soloist in our 2019 production. I was also nominated for best marching technique in my High School.
+			<br>
+			In 2021, I was contracted to play lead trumpet at Cincinnati Tradition DCA corps.
+			<br>
+			In 2022, I was contracted to play the mellophone for the Blue Stars drum corps, where we set a new corps record in score and placement. I returned to Cincinnati Tradition in 2022 after the DCI tour had ended to fill a mellophone spot for DCA finals.
+			<br>
+			In 2023, I returned to the Blue Stars on mellophone for my age-out year. I was part of a featured visual ensemble for the 2023 production.
+			<br>
+			I spent my final season of eligibility marching at Cap City 2 indoor percussion with the visual ensemble. We broke all previous CC2 score records and placed 3rd overall in Open Class.
+
+			</p>
+			<div class="slideshow-container">
+			
+				<!-- Slideshow images -->
+				<img class="slideshow-image" src="Assets/Screenshot 2023-12-24 124914.png" alt="Liam 2019">
+				<img class="slideshow-image" src="Assets/Screenshot 2023-12-24 123412.png" alt="Liam 2021">
+				<img class="slideshow-image" src="Assets/LiamKornoely2022.jpg" alt="Liam 2022 Blue Stars">
+				<img class="slideshow-image" src="Assets/Screenshot_20240314-183833.png" alt="Liam 2022 Cincinnati Tradition">
+				<img class="slideshow-image" src="Assets/LiamKornoely2023.jpg" alt="Liam 2023 Blue Stars">
+				<img class="slideshow-image" src="Assets/Snapchat-2123599374.jpg" alt="Liam 2023 UC Bearcat Bands">
+				<img class="slideshow-image" src="Assets/CC2.Dayton.2.19.24-132.jpg" alt="Liam 2024 Cap City 2">
+
+				<!-- Navigation dots -->
+				<div style="text-align:center; margin-top: 10px;">
+					<span class="dot"></span>
+					<span class="dot"></span>
+					<span class="dot"></span>
+					<span class="dot"></span>
+					<span class="dot"></span>
+					<span class="dot"></span>
+					<span class="dot"></span>
+				</div>
+			</div>																	
+				<!--		
 				<img src="Assets/Screenshot 2023-12-24 124914.png" alt="Liam 2019" style="height: 20%px; width: 20%; margin: 10px;">
-				<img src="Assets/Screenshot 2023-12-24 123412.png" alt="Liam 2021" style="height: 20%px; width: 20%; margin: 10px;">
+				<img src="" style="height: 20%px; width: 20%; margin: 10px;">
 				<img src="Assets/LiamKornoely2022.jpg" alt="Liam 2022 BS" style="height: 20%px; width: 20%; margin: 10px;">
 				<img src="Assets/Screenshot_20240314-183833.png" alt="Liam 2022 CT" style="height: 20%px; width: 20%; margin: 10px;">
 				<img src="Assets/LiamKornoely2023.jpg" alt="Liam 2023" style="height: 20%px; width: 20%; margin: 10px;">
 				<img src="Assets/Snapchat-2123599374.jpg" alt="Liam 2023 UC" style="height: 20%px; width: 20%; margin: 10px;">
 				<img src="Assets/CC2.Dayton.2.19.24-132.jpg" alt="Liam 2024" style="height: 20%px; width: 20%; margin: 10px;">
-				
+			-->
 			</div>
-			<p style= "color: white; font-size: 20px; text-align: center; margin: 5px;"><br>I have been involved in the marching arts since 2015 when I joined my highschool marching band. I started my drum corps jorney with the DCA corps <i> Cininnati Tradition.</i> where I played lead trumpet. I got a contract to march mellophone at <i>The Blue Stars</i> where I contiued until I aged out in 2023. I am contiuing to perform with the indoor percussion group <i>Cap City 2</i> where I am a member of the visual ensemble.<br> </p>
+			
 		</div>
 	</div>
 	<!-- Marching Education -->
@@ -71,9 +143,45 @@
 				<img src="https://www.littlehighlanders.com/Portals/20741/logo636257249219093133.png" alt="Oak Hills High School Logo" style="height 100px; width: 100px; margin: 10px;">
 			</a>
 		</div>
-		<p style= "color: white; font-size: 20px; text-align: center; margin: 5px;"> I am currently working as a visual tech at Cininnati Tradition and Oak Hills Highschool in Cininnati.</p>
+		<p style= "color: white; font-size: 20px; text-align: center; margin: 5px;"> I am currently working as a visual tech at Cininnati Tradition and Oak Hills High School in Cininnati.</p>
 		</div>
 	</div>	
+	
+	<script>
+    // JavaScript for automatic slideshow
+    let slideIndex = 0;
+    const slides = document.querySelectorAll('.slideshow-image');
+    const dots = document.querySelectorAll('.dot');
+
+    function showSlides() {
+        // Hide all slides
+        slides.forEach(slide => {
+            slide.style.display = 'none';
+        });
+
+        // Reset all dots to default color
+        dots.forEach(dot => {
+            dot.classList.remove('active');
+        });
+
+        // Display the current slide and activate corresponding dot
+        slides[slideIndex].style.display = 'block';
+        dots[slideIndex].classList.add('active');
+
+        // Move to the next slide
+        slideIndex++;
+        if (slideIndex >= slides.length) {
+            slideIndex = 0;
+        }
+
+        // Change slide every 3 seconds (3000 milliseconds)
+        setTimeout(showSlides, 8000);
+    }
+
+    // Start the slideshow
+    showSlides();
+</script>
+
 </body>
 <footer">
 	<div style="position: relative; margin: 50px;">
