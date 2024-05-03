@@ -14,6 +14,10 @@
 	  left: 50%;
 	  transform: translate(-50%, -50%);
 	}
+	.center2 {
+    display: flex;
+    justify-content: center;
+}
 	.top-left 
 	{
 	  position: absolute;
@@ -220,10 +224,35 @@
 
 </body>
 <footer">
-	<div style="position: relative; margin: 50px;">
-		<div style="text-align:center; vertical-align: center; flex-wrap: wrap;">
-			<a href="https://www.linkedin.com/in/liam-kornoely-8124661a3/" download target="_blank" style="font-size: 30px; margin:5px; width:15%;" class="button">LinkedIn</a>
+	<div style="margin: 40px;">
+		<p style= "color: white; font-size: 30px; text-align: center; margin: 5px;"> Contact Me!</p>
+		
+		<form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xgegdnzq" method="post">
+  		<fieldset id="fs-frm-inputs">
+		<div class="center2" style="margin: 5px;">
+    			<label style="color: white;" for="full-name">Full Name</label>
+    		</div>
+		<div class="center2" style="margin: 5px;">
+			<input type="text" name="name" id="full-name" placeholder="First and Last" required="true">
+    		</div>
+		<div class="center2" style="margin: 5px;">
+			<label style="color: white;" for="email-address">Email Address</label>
+    		</div>
+		<div class="center2" style="margin: 5px;">
+			<input type="email" name="_replyto" id="email-address" placeholder="email@gmail.com" required="true">
+    		</div>
+		<div class="center2" style="margin: 5px;">
+			<label style="color: white;" for="message">Message</label>
+    		</div>
+		<div class="center2" style="margin: 5px;">
+			<textarea rows="5" name="message" id="message" placeholder="My Message" required="true"></textarea>
+   		</div>
+			<input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+  		</fieldset>
+		<div class="center2" style="margin: 10px;">
+  			<input type="submit" value="Submit" style="width: 15vw;">
 		</div>
+		</form>
 	</div>
 </footer>
 </html>
