@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Buy a Piece</title>
+	<link rel="icon" type="image/x-icon" href="https://i1.sndcdn.com/avatars-799UJGNuZ6LHMFEZ-KjZOoA-t500x500.jpg">
+</head>
+
+<style>
+.flex-container 
+	{
+	  display: flex;
+	  flex-wrap: wrap;
+	  align-items: left;
+	  justify-content: left;
+	}	
+	.button
+	{
+		background-color: white;
+		border: 0px solid black;
+		color: black;
+		padding: 4px;
+		text-align: center;
+		display: inline-block;
+		margin: 4x 2px;
+		cursor: pointer;
+		border-radius: 0px;
+		transition-duration: 0.4s;
+		width: 120px;
+	}
+	
+	.button:hover
+	{
+		background-color: rgba(0, 0, 0, .1);
+	}
+	.tab 
+	{
+	  overflow: hidden;
+	  border: 1px solid #ccc;
+	  background-color: #f1f1f1;
+	  padding-right: 40px;
+	  padding-left: 40px;
+	}
+	.center2 {
+    		display: flex;
+    		justify-content: center;
+	}
+</style>
+<body>
+		<div class="flex-container" style="align-items: center; justify-content: center; flex-wrap: wrap; flex-basis: auto; width: auto; height: auto; margin: 5px;">
+			<div class="flex-container" style="flexwrap: wrap; width: 300px;"> 
+				<a href="CompositionWorks.html" class="button" style="width: 200px; margin: 15px;">Works</a>
+				<a href="CompositionBuy.html" class="button" style="width: 200px; margin: 15px;">Buy a Piece</a>
+			</div>
+			<div style="margin: 20px; max-width: 200px;"> <!-- name and logo -->
+				<p style="text-align: center; font-size:30px; margin: 5px; color: black;">Liam Kornoely</p>
+				<a href="index.html">
+					<img src="https://i1.sndcdn.com/avatars-799UJGNuZ6LHMFEZ-KjZOoA-t500x500.jpg" alt="ahh" style="margin-left: auto; margin-right: auto; height: 60px; width: 60px; display:block; ">
+				</a>
+				<p style="color: gray; text-align: center; font-size:24px; margin: 5px;"><i>Music Composition</i></p>
+			</div>
+			<div class="flex-container" style="flexwrap: wrap; width: 300px;"> 
+				<a href="CompositionBio.html" class="button" style="width: 200px; margin: 15px;">Bio</a>
+				<a href="CompositionContact.html" class="button" style="width: 200px; margin: 15px;">Get in Contact</a>
+			</div>
+		</div>
+
+
+<p style="font-size: 1.5vw; text-align: center; color: red; margin: 20px;" ><b>Unfortunatly, buying directly off my website is not yet avalible. Please fill out the form below if you are interested in a piece and I will be in contact with you as soon as possible.</b></p>
+
+<div style="margin: 40px;">
+		<p style= "font-size: 30px; text-align: center; margin: 5px;">Let me know what piece you want</p>
+		
+		<form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mnqewwka" method="post">
+  		<fieldset id="fs-frm-inputs">
+			<div class="center2" style="margin: 5px;">
+    				<label style="for="full-name">Full Name*</label>
+    			</div>
+			<div class="center2" style="margin: 5px;">
+				<input type="text" name="name" id="full-name" placeholder="First and Last" required="true">
+    			</div>
+			<div class="center2" style="margin: 5px;">
+				<label for="email-address">Email Address*</label>
+    			</div>
+			<div class="center2" style="margin: 5px;">
+				<input type="email" name="_replyto" id="email-address" placeholder="email@gmail.com" required="true">
+    			</div>
+			
+
+			<div class="center2" style="margin: 5px;">
+				<label for="cars">Choose a Piece*:</label>
+			</div>
+			<div class="center2" style="margin: 5px;">
+				<select id="Pieces" name="Pieces">
+				<option value="" disabled selected>Select an option</option> <!-- Default title -->
+  					<optgroup label="Small Ensemble">
+						<optgroup label="&nbsp;&nbsp;&nbsp;Brass Quintets">
+    							<option value="Walking With Giant">Walking With Giants(2020) - $15</option>
+    							<option value="Coruscating Sky">Coruscating Sky (2023) - $15</option>
+    	  					</optgroup>
+  						<optgroup label="&nbsp;&nbsp;&nbsp;String Quartets">
+    							<option value="Iridescent River">Iridescent River(2020) - $20</option>
+  						</optgroup>
+  						<optgroup label="&nbsp;&nbsp;&nbsp;Miscellaneous">
+    							<option value="Snoozle">Snoozle (2022) - $20</option>
+  						</optgroup>
+					</optgroup>
+					<optgroup label="Large Ensembles">
+						<optgroup label="&nbsp;&nbsp;&nbsp;Concert Band Works">
+							<option value="An Old Gold Star">An Old Gold Star(2020) - $40</option>
+							<option value="Systematic Haywire">Systematic Haywire(2022) - $40</option>
+						</optgroup>
+						<optgroup label="&nbsp;&nbsp;&nbsp;Orchestra Works">
+							<option value="Space Cadet">Space Cadet (2022) - $45</option>
+						</optgroup>
+					</optgroup>
+				
+				</select>
+			</div>
+
+			<div class="center2" style="margin: 5px;">
+				<label for="message">Message</label>
+    			</div>
+			<div class="center2" style="margin: 5px;">
+				<textarea rows="5" name="message" id="message" placeholder="My Message" required="true"></textarea>
+   			</div>
+				<input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+			<div class="center2" >
+  				<p style="font-size: 1vw;">*Required</p>
+			</div>
+			<div class="center2" style="margin: 20px;">
+  				<input type="submit" value="Submit" style="width: 15vw;">
+			</div>
+  		</fieldset>
+		</form>
+	</div>
+
+</script>
+
+</body>
+</html>
