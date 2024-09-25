@@ -1,56 +1,260 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Liam Kornoely Composition</title>
+	<title>Liam Kornoely Marching arts</title>
 	<link rel="icon" type="image/x-icon" href="https://i1.sndcdn.com/avatars-799UJGNuZ6LHMFEZ-KjZOoA-t500x500.jpg">
-</head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slideshow</title>
 <style>
+	.center 
+	{
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	}
+	.center2 {
+    display: flex;
+    justify-content: center;
+}
+	.top-left 
+	{
+	  position: absolute;
+	  top: 5%;
+	  left: 2%;
+	  transform: translate(-5%, -2%);
+	}
 	.flex-container 
 	{
 	  display: flex;
 	  flex-wrap: nowrap;
 	  align-items: center;
 	  justify-content: center;
-	}	
-	.button
-	{
-		background-color: white;
-		border: 0px solid black;
-		color: black;
-		padding: 4px;
-		text-align: center;
-		display: inline-block;
-		margin: 4x 2px;
-		cursor: pointer;
-		border-radius: 0px;
-		transition-duration: 0.4s;
-		width: 120px;
 	}
 	
-	.button:hover
-	{
-		background-color: rgba(0, 0, 0, .1);
-		
-	}	
+/* Styling for the slideshow container */
+        .slideshow-container {
+            position: relative;
+            max-width: 600px; /* Adjust as needed */
+            margin: 0 auto; /* Center the slideshow horizontally */
+            border: 2px solid #ccc; /* Gray border */
+            border-radius: 10px; /* Rounded corners */
+            overflow: hidden;
+        }
+
+        /* Styling for the slideshow images */
+        .slideshow-image {
+            display: none;
+            width: 300px;
+            height: 400x;
+			transition: opacity 1s ease-in-out;
+        }
+
+        /* Styling for the slideshow navigation dots */
+        .dot {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin: 0 8px;
+            background-color: #bbb;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        /* Active dot styling */
+        .active {
+            background-color: #717171;
+        }	
 </style>
-<body>
-	<div class="flex-container">
-		<div> <!-- Recordings -->
-			<a href="CompositionWorks.html" class="button" style="width: 200px; margin 15px;">Works</a>
-		</div>
-		<div style="margin: 20px;"> <!-- name and logo -->
-			<p style="text-align: center; font-size:30px; margin: 5px; color: black;">Liam Kornoely</p>
+	<div style="position: relative;">
+		<img src="https://i.ytimg.com/vi/VIPZc7Sr-LM/maxresdefault.jpg"; alt="The Blue Stars" style="width:100%; opacity: 0.3;">
+		<div class="top-left">
 			<a href="index.html">
-				<img src="https://i1.sndcdn.com/avatars-799UJGNuZ6LHMFEZ-KjZOoA-t500x500.jpg" alt="ahh" style="margin-left: auto; margin-right: auto; height: 60px; width: 60px; display:block; ">
+				<img src="https://i1.sndcdn.com/avatars-799UJGNuZ6LHMFEZ-KjZOoA-t500x500.jpg" alt="ahh" style="height: 20%; width: 20%; margin: 5%;">
 			</a>
-			<p style="color: gray; text-align: center; font-size:24px; margin: 5px;"><i>Music Composition</i></p>
 		</div>
-		<div> <!-- Bio -->
-			<a href="CompositionBio.html" class="button" style="width: 200px; margin 15px;">Bio</a>
+		<div class="center">
+			<p style="color:white; font-size: 3vw; text-align: center;">Liam Kornoely</p>
+			<p style="color:white; font-size: 2vw; text-align: center;">Marching Arts Design and Education</p>
 		</div>
 	</div>
-	<div> <!-- fill in image for "professional photo" -->
-		<img src="https://freerangestock.com/sample/1705/sheet-music-background.jpg" style="display:block; margin-left: auto; margin-right: auto;">
+</head>
+
+<body style="background-color: black;">
+
+<!-- Marching Education -->
+	
+	<p style= "color: white; font-size: 40px; text-align: center;"><i>Marhing Arts Educaion</i></p>
+	
+	<div class="flex-container">
+		<div style="background-color: #4d4f54; margin: 20px; border-style: solid; border-color: #a1a09f; border-radius: 8px; width: 100%">
+		<p style= "text-align: center;">
+			<a href="https://cincinnatitradition.org/" target="_blank" style= "color: white; font-size: 40px; text-align: center;"><i>Cincinnati Tradition</i></a>
+		</p>
+			<div class="flex-container">
+				<img src="assets/received_1050257146467633.jpeg" alt="Picture of Liam with Cincinnati Tradition" style="height 200px; width: 200px; margin: 10px;">
+				<p style="color: white; font-size: 20px; text-align: left; margin: 10px;">I worked with Cincinnati Tradition in the 2024 inaugural DCI Open-Class season with their production "Of a Stone." I was primarily a visual tech with the horn line, but I would also fill in as a brass instructor, usually working with the high brass. Because of the unique situation of the activity, I was the only field tech as the rest of the staff were also marching in the show. I worked under visual caption head Kyle Bufold. At 2024 DCI All-Age finals Cincinnati Tradition won first place in Open Class and won best visuals in Open Class. </p>
+			</div>
+		</div>
 	</div>
+	
+	<div class="flex-container">
+		<div style="background-color: #4d4f54; margin: 20px; border-style: solid; border-color: #a1a09f; border-radius: 8px; width: 100%">
+		<p style= "text-align: center;">
+			<a href="https://musiccityyouth.org/" target="_blank" style= "color: white; font-size: 40px; text-align: center;"><i>Music City</i></a>
+		</p>
+			<div class="flex-container">
+				<p style="color: white; font-size: 20px; text-align: left; margin: 10px;">As a visual tech for Music City's 2024 production, 'Leave it at the River,' I contributed to their DCI Semi-Finals placement of 17th. My responsibilities included refining drill and choreography, as well as providing instruction in technique, choreography, and performance for the hornline. The experience was incredibly rewarding, and I'm eager to continue my involvement with Music City in the 2025 season.</p>
+				<img src="assets/MUS_6907-Enhanced-NR copy.jpg" alt="Picture of Liam with Cincinnati Tradition" style="height 400px; width: 400px; margin: 10px;">
+			</div>
+		</div>
+	</div>
+	
+	<div class="flex-container">
+		<div style="background-color: #4d4f54; margin: 20px; border-style: solid; border-color: #a1a09f; border-radius: 8px; width: 100%">
+		<p style= "text-align: center;">
+			<a href="https://www.oakhillsbandassociation.org/" target="_blank" style= "color: white; font-size: 40px; text-align: center;"><i>Oak Hills</i></a>
+		</p>	
+			<div class="flex-container">
+				<img src="https://www.littlehighlanders.com/Portals/20741/logo636257249219093133.png" alt="Oak Hills High School Logo" style="height 400px; width: 400px; margin: 10px;">
+				<p style="color: white; font-size: 20px; text-align: left; margin: 10px;">As a visual tech for the Oak Hills High School Marching Band, I primarily focused on refining visual performance and technique. Additionally, I assisted the brass section when needed and supported the caption head by contributing to choreography development and drill instruction.</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="flex-container">
+		<div style="background-color: #4d4f54; margin: 20px; border-style: solid; border-color: #a1a09f; border-radius: 8px; width: 100%">
+		<p style= "text-align: center;">
+			<a href="https://www.capcitypercussion.com/" target="_blank" style= "color: white; font-size: 40px; text-align: center;"><i>Cap City</i></a>
+		</p>
+			<div class="flex-container">
+				<p style="color: white; font-size: 20px; text-align: left; margin: 10px;">As a Visual Tech at Cap City, I specialize in refining marching technique, choreography, and overall performance for both the World and Open Class groups. I work closely with the battery to ensure a cohesive visual experience, contributing to the team's success on the floor.</p>
+				<img src="https://images.squarespace-cdn.com/content/v1/59345de146c3c4bfed61fc37/1581638895217-LE48UJXO8WEK0PAPBOOG/White_transparent_HiRes.png?format=1500w" alt="Cap City Logo" style="height 400px; width: 400px; margin: 10px;">
+			</div>
+		</div>
+	</div>
+
+	<!-- Marching experience -->
+	<div class="flex-container">
+		<div style="background-color: #4d4f54; margin: 20px; border-style: solid; border-color: #a1a09f; border-radius: 8px;">
+			<p style= "color: white; font-size: 40px; text-align: center;"><i>My Marching Experience</i></p>
+			<div class="flex-container" style="flex-wrap: wrap;">
+			<p style= "color: white; font-size: 20px; text-align: center; margin: 5px;"> 
+			I began my marching career in high school at Jenison High School. I played lead trumpet and was a featured soloist in our 2019 production. I was also nominated for best marching technique in my High School.
+			<br>
+			In 2021, I was contracted to play lead trumpet at Cincinnati Tradition DCA corps.
+			<br>
+			In 2022, I was contracted to play the mellophone for the Blue Stars drum corps, where we set a new corps record in score and placement. I returned to Cincinnati Tradition in 2022 after the DCI tour had ended to fill a mellophone spot for DCA finals.
+			<br>
+			In 2023, I returned to the Blue Stars on mellophone for my age-out year. I was part of a featured visual ensemble for the 2023 production.
+			<br>
+			I spent my final season of eligibility marching at Cap City 2 indoor percussion with the visual ensemble. We broke all previous CC2 score records and placed 3rd overall in Open Class.
+
+			</p>
+			<div class="slideshow-container">
+			
+				<!-- Slideshow images -->
+				<img class="slideshow-image" src="Assets/Screenshot 2023-12-24 124914.png" alt="Liam 2019">
+				<img class="slideshow-image" src="Assets/Screenshot 2023-12-24 123412.png" alt="Liam 2021">
+				<img class="slideshow-image" src="Assets/LiamKornoely2022.jpg" alt="Liam 2022 Blue Stars">
+				<img class="slideshow-image" src="Assets/Screenshot_20240314-183833.png" alt="Liam 2022 Cincinnati Tradition">
+				<img class="slideshow-image" src="Assets/LiamKornoely2023.jpg" alt="Liam 2023 Blue Stars">
+				<img class="slideshow-image" src="Assets/Snapchat-2123599374.jpg" alt="Liam 2023 UC Bearcat Bands">
+				<img class="slideshow-image" src="Assets/CC2.Dayton.2.19.24-132.jpg" alt="Liam 2024 Cap City 2">
+
+				<!-- Navigation dots -->
+				<div style="text-align:center; margin-top: 10px;">
+					<span class="dot"></span>
+					<span class="dot"></span>
+					<span class="dot"></span>
+					<span class="dot"></span>
+					<span class="dot"></span>
+					<span class="dot"></span>
+					<span class="dot"></span>
+				</div>
+			</div>																	
+				<!--		
+				<img src="Assets/Screenshot 2023-12-24 124914.png" alt="Liam 2019" style="height: 20%px; width: 20%; margin: 10px;">
+				<img src="" style="height: 20%px; width: 20%; margin: 10px;">
+				<img src="Assets/LiamKornoely2022.jpg" alt="Liam 2022 BS" style="height: 20%px; width: 20%; margin: 10px;">
+				<img src="Assets/Screenshot_20240314-183833.png" alt="Liam 2022 CT" style="height: 20%px; width: 20%; margin: 10px;">
+				<img src="Assets/LiamKornoely2023.jpg" alt="Liam 2023" style="height: 20%px; width: 20%; margin: 10px;">
+				<img src="Assets/Snapchat-2123599374.jpg" alt="Liam 2023 UC" style="height: 20%px; width: 20%; margin: 10px;">
+				<img src="Assets/CC2.Dayton.2.19.24-132.jpg" alt="Liam 2024" style="height: 20%px; width: 20%; margin: 10px;">
+			-->
+			</div>
+			
+		</div>
+	</div>
+	
+	
+	<script>
+    // JavaScript for automatic slideshow
+    let slideIndex = 0;
+    const slides = document.querySelectorAll('.slideshow-image');
+    const dots = document.querySelectorAll('.dot');
+
+    function showSlides() {
+        // Hide all slides
+        slides.forEach(slide => {
+            slide.style.display = 'none';
+        });
+
+        // Reset all dots to default color
+        dots.forEach(dot => {
+            dot.classList.remove('active');
+        });
+
+        // Display the current slide and activate corresponding dot
+        slides[slideIndex].style.display = 'block';
+        dots[slideIndex].classList.add('active');
+
+        // Move to the next slide
+        slideIndex++;
+        if (slideIndex >= slides.length) {
+            slideIndex = 0;
+        }
+
+        // Change slide every 3 seconds (3000 milliseconds)
+        setTimeout(showSlides, 8000);
+    }
+
+    // Start the slideshow
+    showSlides();
+</script>
+
 </body>
+<footer">
+	<div style="margin: 40px;">
+		<p style= "color: white; font-size: 30px; text-align: center; margin: 5px;">Let's Get in Contact</p>
+		
+		<form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xgegdnzq" method="post">
+  		<fieldset id="fs-frm-inputs">
+			<div class="center2" style="margin: 5px;">
+    				<label style="color: white;" for="full-name">Full Name</label>
+    			</div>
+			<div class="center2" style="margin: 5px;">
+				<input type="text" name="name" id="full-name" placeholder="First and Last" required="true">
+    			</div>
+			<div class="center2" style="margin: 5px;">
+				<label style="color: white;" for="email-address">Email Address</label>
+    			</div>
+			<div class="center2" style="margin: 5px;">
+				<input type="email" name="_replyto" id="email-address" placeholder="email@gmail.com" required="true">
+    			</div>
+			<div class="center2" style="margin: 5px;">
+				<label style="color: white;" for="message">Message</label>
+    			</div>
+			<div class="center2" style="margin: 5px;">
+				<textarea rows="5" name="message" id="message" placeholder="My Message" required="true"></textarea>
+   			</div>
+				<input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+			<div class="center2" style="margin: 20px;">
+  				<input type="submit" value="Submit" style="width: 15vw;">
+			</div>
+  		</fieldset>
+		</form>
+	</div>
+</footer>
 </html>
