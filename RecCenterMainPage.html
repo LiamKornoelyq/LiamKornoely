@@ -5,7 +5,18 @@
 	<link rel="icon" type="image/x-icon" href="https://i1.sndcdn.com/avatars-799UJGNuZ6LHMFEZ-KjZOoA-t500x500.jpg">
 </head>
 <style>
-	.button
+	body {
+    background: url('https://s3.amazonaws.com/cstest/facilities/0d23dbf7-IMG_5006.JPG.1100x0_q95.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+	.flex-container 
+	{
+	  display: flex;
+	  
+	  align-items: center;
+	  justify-content: center;
+	}	
+	.button2
 	{
 		background-color: lightgray;
 		border: 1px solid black;
@@ -18,81 +29,121 @@
 		border-radius: 12px;
 		transition-duration: 0.4s;
 	}		
-	.button:hover
+	.button2:hover
 	{
 		background-color: white;		
 	}	
-	.center 
+	.button
 	{
-	  position: absolute;
-	  top: 50%;
-	  left: 50%;
-	  transform: translate(-50%, -50%);
+		background-color: dark gray;
+		border: 0px solid black;
+		color: white;
+		padding: 4px;
+		text-align: center;
+		display: inline-block;
+		margin: 4x 2px;
+		cursor: pointer;
+		border-radius: 0px;
+		transition-duration: 0.4s;
+		width: 120px;
 	}
-	.top-left 
+	
+	.button:hover
 	{
-	  position: absolute;
-	  top: 5%;
-	  left: 2%;
-	  transform: translate(-5%, -2%);
-	}
-	.flex-container 
-	{
-	  display: flex;
-	  flex-wrap: nowrap;
-	}
-	h3
-	{
-		border-style: solid;
-		border-color: #616161;
-		border-radius: 12px;
-	}
-	label
-	{
-		font-family: Verdana, sans-serif;
-	}
-	.center2 {
-    display: flex;
-    justify-content: center;
+		background-color: rgba(0, 0, 0, .5);
+		
+	}	
+	.sticky-box {
+    position: -webkit-sticky; /* For Safari */
+    position:;
+    top: 0;
+    background-color: rgba(20, 20, 20, 0.9);
+    color: white;
+    padding: 0px;
+    text-align: center;
+    z-index: 1000; /* Ensures the sticky box is above other content */
 }
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 1;
+}
+.content {
+    position: relative;
+    z-index: 2;
+    
+}
+iframe {
+            width: 80%;
+            border: 1px solid #ccc;
+        }
 </style>
-<!-- header -->
-<head>
-	<div style="position: relative;">
-		<img src="https://s3.amazonaws.com/cstest/facilities/0d23dbf7-IMG_5006.JPG.1100x0_q95.jpg" alt="UC Campus Rec Pool" style="width:100%; opacity: 0.3;">
-		<div class="top-left">
+<body>
+<div class="overlay"></div>
+<div class="content">
+<div class="sticky-box">
+	<div class="flex-container">
+		<div>
+			<a href="WaterWorkouts.html" class="button" style="width: 200px; margin 15px;">Aquatic Workouts</a>
+		</div>
+		<div style="margin: 20px;"> <!-- name and logo -->
+			<p style="text-align: center; font-size:30px; margin: 5px; color: white;">Liam Kornoely</p>
 			<a href="index.html">
-				<img src="https://i1.sndcdn.com/avatars-799UJGNuZ6LHMFEZ-KjZOoA-t500x500.jpg" alt="ahh" style="height: 20%; width: 20%; margin: 5%;">
+				<img src="https://i1.sndcdn.com/avatars-799UJGNuZ6LHMFEZ-KjZOoA-t500x500.jpg" alt="ahh" style="margin-left: auto; margin-right: auto; height: 60px; width: 60px; display:block; ">
 			</a>
+			<p style="color: gray; text-align: center; font-size:24px; margin: 5px;"><i>Campus Recreation</i></p>
 		</div>
-		<div class="center">
-			<p style="color:white; font-size: 40px; text-align: center;">Liam Kornoely</p>
-			<p style="color:white; font-size: 34px; text-align: center;">Campus Recreation Aquatics</p>
+		<div>
+			<a href="RecCenterBio.html" class="button" style="width: 200px; margin 15px;">Resume and Contact</a>
 		</div>
 	</div>
-</head>
+</div>
 
-<!-- body -->
-<body style="background-color: black;">
-	<div class="flex-container">	
-		<img src="Assets/AirBrush_20240107234015.jpg" alt="Liam Kornoely" style="height: 300px; width:450px;">
-		<div class="border">
-			<h3 style="color:#dedede; font-size: 20px; margin: 5px; padding: 5px;">
-				I started my lifeguarding Journey in 2020 at the University of Cincinnati.  I received my certification through the University of Cincinnati Free Lifeguard Class which was led by Autumn Cleverley and Bob Weeks.  Once completed I secured a lifeguard position within the University of Cincinnati Aquatics department. I maintained this role throughout the spring and summer, achieving a promotion to supervisor in the fall of 2021. 				 
-				<br><br>
-				In 2021, amidst a transition in pro-staff, I was promoted to a Program Assistant. As part of my position as Program Assistant, I obtained my Lifeguard Instructor certification. Following this achievement, I assumed additional responsibilities, including overseeing hiring, training of new lifeguards, doing recertifications and contributing to in-services. Throughout 2022, my responsibilities grew, and I individually taught the free lifeguarding class to potential new employees.   
-				<br><br>
-				By the fall of 2023, the Aquatic Coordinator Sarah Zeman assumed primary responsibilities for hiring and lifeguard training. Despite this, I remain actively involved, attending and assisting with classes and in-services. Currently, I am undergoing training to become an aquatic fitness instructor with the goal of initiating college-level Aquatic Fitness classes at UC.
+	<div class="flex-container" style = "margin: 100px; background-color: rgba(0, 0, 0, 0.8); border-style: solid; border-color: #616161; border-radius: 12px; flex-wrap:wrap;">	
+		<h1 style="text-align:center; color: white; width:1000px; flex-wrap: wrap;">A little about me</h1>
+		<div class="flex-container" style="flex-wrap: nowrap">
+			<img src="Assets/AirBrush_20240107234015.jpg" alt="Liam Kornoely" style="height: 300px; width:450px; padding: 10px; flex-wrap: wrap;">
+			<div class="border">
+				<h3 style="color:white; font-size: 20px; margin: 5px; padding: 5px;">
+					I started my lifeguarding Journey in 2020 at the University of Cincinnati.  I received my certification through the University of Cincinnati Free Lifeguard Class which was led by Autumn Cleverley and Bob Weeks.  Once completed I secured a lifeguard position within the University of Cincinnati Aquatics department. I maintained this role throughout the spring and summer, achieving a promotion to supervisor in the fall of 2021. 				 
+					<br><br>
+					In 2021, amidst a transition in pro-staff, I was promoted to a Program Assistant. As part of my position as Program Assistant, I obtained my Lifeguard Instructor certification. Following this achievement, I assumed additional responsibilities, including overseeing hiring, training of new lifeguards, doing recertifications and contributing to in-services. Throughout 2022, my responsibilities grew, and I individually taught the free lifeguarding class to potential new employees.   
+					<br><br>
+					By the fall of 2023, the Aquatic Coordinator Sarah Zeman assumed primary responsibilities for hiring and lifeguard training. Despite this, I remain actively involved, attending and assisting with classes and in-services. Currently, I am undergoing training to become an aquatic fitness instructor with the goal of initiating college-level Aquatic Fitness classes at UC.
 				</h3>
+			</div>
 		</div>
 	</div>
-	<div style="text-align:center; vertical-align: center; flex-wrap: wrap;">
-		<a href="Assets/LiamKornoelyResume.pdf" download target="_blank" style="font-size: 30px; margin:5px; width: 15%;" class="button">Résumé</a>
-		<a href="https://www.linkedin.com/in/liam-kornoely-8124661a3/" download target="_blank" style="font-size: 30px; margin:5px; width:15%;" class="button">LinkedIn</a>
+	
+	<div class="flex-container" style = "margin: 100px; background-color: rgba(0, 0, 0, 0.8); border-style: solid; border-color: #616161; border-radius: 12px; flex-wrap:wrap;">	
+		<h1 style="text-align:center; color: white; padding-left: 200px; padding-right:200px; flex-wrap: wrap;">Classes and Programs I've Taught</h1>
+		
+			<div class="flex-container" style = "margin: 20px; background-color: rgba(0, 0, 0, 0.8); border-style: solid; border-color: #616161; border-radius: 12px; flex-wrap: wrap;">	
+				<h2 style="text-align:center; color: white; width: 75%; height: 10%; margin: 5px;">Free Lifeguard Class<h2>
+				<h3 style="text-align:center; color: white;  margin: 5px;">The free lifeguard classes offered at UC are an attempt to reduce the effects of the recent lifeguard shortages in America. The goal of the class is to utilize the already existing LGIs on staff to teach a lifeguard course, free of charge to participants, under the contract that they work a minumum amout of hours for a set amount of time to offset the cost of the class. this class is usually taught once a semester right before major breaks at the university.<h3>
+			</div>
+			
+			<div class="flex-container" style = "margin: 20px; background-color: rgba(0, 0, 0, 0.8); border-style: solid; border-color: #616161; border-radius: 12px; flex-wrap: wrap;">	
+				<h2 style="text-align:center; color: white; width: 75%;  margin: 5px;">Student CPR classes<h2>
+				<h3 style="text-align:center; color: white;  margin: 5px;">This class is an offered to any studen majoring in a field that would require them to have a CPR certification. Each class hold about 25 participants and is co-taught.<h3>
+			</div>
+			
+			<div class="flex-container" style = "margin: 20px; background-color: rgba(0, 0, 0, 0.8); border-style: solid; border-color: #616161; border-radius: 12px; flex-wrap: wrap;">	
+				<h2 style="text-align:center; color: white;  margin: 5px;">Shallow Water Power Hour<h2>
+				<h3 style="text-align:center; color: white; margin: 5px;">Shallow Water Power hour was a weekly workout class I started in the summer of 2024. The class consited of high intensity workouts utilizing aquatic dumbells, Aquaflex padel water fans, and pool noodles. The class was taught in a shallow water leisure pool at around 3 and a half feet and utilized a small lazy river and a whirpool vortex to enhance workouts.<h3>
+			</div>			
 	</div>
-</body>
-
-<footer">
+	
+	<div style="text-align:center; vertical-align: center; flex-wrap: wrap; margin: 30px;">
+		<a href="Assets/LiamKornoelyResume.pdf" download target="_blank" style="font-size: 30px; margin:5px; width: 15%;" class="button2">Résumé</a>
+		<a href="https://www.linkedin.com/in/liam-kornoely-8124661a3/" download target="_blank" style="font-size: 30px; margin:5px; width:15%;" class="button2">LinkedIn</a>
+	</div>
+	
+	<div class="flex-container" style = "margin: 100px; background-color: rgba(0, 0, 0, 0.8); border-style: solid; border-color: #616161; border-radius: 12px; flex-wrap:wrap;">
 	<div style="margin: 40px;">
 		<p style= "color: white; font-size: 30px; text-align: center; margin: 5px;">Let's Get in Contact</p>
 		
@@ -123,6 +174,10 @@
   		</fieldset>
 		</form>
 	</div>
-</footer>
+</div>
+</div>
+</body>
+<footer>
+
 </footer>
 </html>
