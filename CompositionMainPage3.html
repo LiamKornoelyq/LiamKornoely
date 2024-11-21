@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Composition</title>
+	<link rel="icon" type="image/x-icon" href="https://i1.sndcdn.com/avatars-799UJGNuZ6LHMFEZ-KjZOoA-t500x500.jpg">
+	<style>
+		body {
+			margin: 0;
+			background-image: url('Assets/PXL_20230924_205214354~2.jpg');
+			background-repeat: no-repeat;
+			background-size: auto 100vh; /* Makes the image fill the entire page */
+			background-position: center top; /* Centers horizontally, aligns top vertically */
+		}
+
+		.glitch-text {
+			font-size: 6em;
+			color: black;
+			text-shadow: 2px 0 red, -2px 0 blue;
+			text-align: center;
+			left-margin: 20%;	
+			right-margin: 10%;
+		}
+
+		.header {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 20px;
+			background-color: rgba(255, 255, 255, 0.75); /* Semi-transparent background */
+			position: fixed; /* Keeps the header fixed on the page */
+			width: 100%;
+			z-index: 1000; /* Ensures it's above other content */
+			box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+
+			/* Center the header */
+			top: 60%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		.header a img {
+			width: 80px;
+			height: 80px;
+			margin: 0 40px;
+			border-radius: 8px;
+			transition: transform 0.3s ease;
+		}
+
+		.header a img:hover {
+			transform: scale(1.1);
+		}
+
+		.header a {
+			display: inline-block;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<!-- Left images -->
+		<div style="flex-wrap: wrap">
+			<a href="CompositionWorks2.html"><img src="Assets/Quarter_note_with_upwards_stem_works.svg.png" alt="Link 1" style="height: auto; width: 60px;"></a>
+			<a href="#link2"><img src="Assets/Quarter_note_with_upwards_stem_Media.svg - Copy.png" alt="Link 2" style="height: auto; width: 60px;"></a>
+		</div>
+		
+		<!-- Center text -->
+		<div class="glitch-text">Liam Kornoely</div>
+
+		<!-- Right images -->
+		<div style="flex-wrap: wrap">
+			<a href="CompositionBio.html"><img src="Assets/Quarter_note_with_upwards_stem_Bio.svg.png" alt="Link 3" style="height: auto; width: 60px;"></a>
+			<a href="#link4"><img src="Assets/Quarter_note_with_upwards_stem_Press.svg - Copy.png" alt="Link 4" style="height: auto; width: 60px;"></a>
+		</div>
+	</div>
+</body>
+</html>
