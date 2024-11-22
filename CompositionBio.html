@@ -12,42 +12,68 @@
 	  align-items: center;
 	  justify-content: center;
 	}	
-	.button
-	{
-		background-color: white;
-		border: 0px solid black;
-		color: black;
-		padding: 4px;
-		text-align: center;
-		display: inline-block;
-		margin: 4x 2px;
-		cursor: pointer;
-		border-radius: 0px;
-		transition-duration: 0.4s;
-		width: 120px;
-	}
 	
-	.button:hover
-	{
-		background-color: rgba(0, 0, 0, .1);
-	}
+	.header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      background-color: white;
+      position: fixed; /* Fix the header at the top */
+      top: 0;
+      width: 100%;
+      z-index: 1000; /* Ensure the header is above other content */
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+	  opacity: 0.9;
+    }
+
+    .header a img {
+      width: 80px;
+      height: 80px;
+      margin: 0 10px;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .header a img:hover {
+      transform: scale(1.1);
+    }
+
+    .header .text {
+      margin: 0 20px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .header a {
+      display: inline-block;
+    }
+
+    .glitch-text {
+      font-size: 4em;
+      color: black;
+      text-shadow: 2px 0 red, -2px 0 blue;
+      animation: glitch-smear 0.7s 4;
+      text-align: center;
+      margin-right: 20px;
+	  margin-left: 20px;
+    }
 </style>
 <body >
-	<div class="flex-container">
-		<div> <!-- Recordings -->
-			<a href="CompositionWorks.html" class="button" style="width: 200px; margin 15px;">Works</a>
-		</div>
-		<div style="margin: 20px;"> <!-- name and logo -->
-			<p style="text-align: center; font-size:30px; margin: 5px; color: black;">Liam Kornoely</p>
-			<a href="index.html">
-				<img src="https://i1.sndcdn.com/avatars-799UJGNuZ6LHMFEZ-KjZOoA-t500x500.jpg" alt="ahh" style="margin-left: auto; margin-right: auto; height: 60px; width: 60px; display:block; ">
-			</a>
-			<p style="color: gray; text-align: center; font-size:24px; margin: 5px;"><i>Music Composition</i></p>
-		</div>
-		<div> <!-- Bio -->
-			<a href="CompositionBio.html" class="button" style="width: 200px; margin 15px;">Bio</a>
-		</div>
-	</div>
+	<div class="header">
+    <!-- Left images -->
+    <a href="CompositionWorks2.html"><img src="Assets/Quarter_note_with_upwards_stem_works.svg.png" alt="Link 1" style="width: 30px; margin-right: 40px;"></a>
+    <a href="#link2"><img src="Assets/Quarter_note_with_upwards_stem_Media.svg - Copy.png" alt="Link 2" style="width: 30px;"></a>
+
+    <!-- Center text -->
+    <div class="glitch-text">Liam Kornoely</div>
+
+    <!-- Right images -->
+    <a href="CompositionBio.html"><img src="Assets/Quarter_note_with_upwards_stem_Bio.svg.png" alt="Link 3" style="width: 30px; margin-right: 40px;"></a>
+    <a href="#link4"><img src="Assets/Quarter_note_with_upwards_stem_Press.svg - Copy.png" alt="Link 4" style="width: 30px;"></a>
+  </div>
+  <div style="height: 200px;"></div>
 	<div class="flex-container" style="align-items: left; justify-content: left;">
 		<div>
 			<img src="Assets/PXL_20230924_205316260.jpg" style="height: 500px; width: 375px;">
@@ -55,7 +81,7 @@
 		<div style="margin: 40px;">
 			<p style="font-size: 20px;"> Liam Kornoely began his music career in 2013 at Jenison High School. He picked up the trumpet for the first time, and he just couldn't get enough. He decided that the next best step from playing music is to compose music. He began his formal music study in 2013 when he started lessons at Triumph Music Academy in downtown Grand Rapids. His first piece was performed at the Triumph Music Academy music showcase and was warmly received by the audience and friends alike. Liam got his first major recording for his saxophone quartet "Car Shop" in 2018.
 <br><br>Liam's music career outside of composing continued through his high school years, where he played trumpet in the Jenison High School marching band and eventually became principal of the Jenison Wind Symphony and Symphony Orchestra. He marched in the marching band all four years of high school and was part of a featured brass quintet during his 2019 show. Outside of high school, Liam attended three years at the Western Michigan University Music Seminar Summer Camp for composition from 2016 to 2018. After that, he attended a summer at Interlochen Arts Academy in 2019 for composition. During the summer of 2020, Liam attended the Vienna Screen Music Academy virtually.
-<br><br>After graduating high school, Liam was accepted into the University of Cincinnati College-Conservatory of Music for composition. He is expected to graduate in 2025 with a degree in composition. </p>
+<br><br>After graduating high school, Liam was accepted into the University of Cincinnati College-Conservatory of Music for composition. He is expected to graduate in 2025 with a degree in composition. </p></p>
 		</div>
 	</div>
 </body>
