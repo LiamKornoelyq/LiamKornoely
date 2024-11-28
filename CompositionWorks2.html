@@ -10,11 +10,21 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-image: URL('Assets/360_F_504018025_HSi101n4ayPgLTDJDR69hIQ8ppxdKLfH.jpg');
-	  background-repeat: no-repeat;
-	  background-size: cover;
+      background: linear-gradient(45deg, red, purple, blue);
+      background-size: 400% 400%;
+      animation: gradientAnimation 120s ease infinite;
+	  }
+	  
+	@keyframes gradientAnimation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
     }
 
+    @keyframes blinkText {
+      50% { opacity: 0.6; }
+    }
+	  
     .header {
       display: flex;
       align-items: center;
@@ -88,17 +98,13 @@
       padding-bottom: 10px;
     }
 
-    .columns {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-    }
-
     .column {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
+	  flex-wrap: wrap;
       gap: 10px;
-      width: 900px;
+      width: 100%;
+	  justify-content: space-evenly;
     }
 
     .dropdown {
@@ -115,8 +121,9 @@
       padding: 10px;
       border-bottom: 1px solid #ddd;
       background: #f9f9f9;
+	  font-size: 2vh;
+	  text-align: center;
     }
-
     .dropdown-content {
       display: none;
       padding: 10px;
@@ -127,26 +134,37 @@
     .dropdown.open .dropdown-content {
       display: block;
     }
-	.conic-gradient-box {
-	  background: linear-gradient(120deg, red, blue);
+	.spacer
+	{
+		height: 100px;
 	}
+	@media only screen and (max-width: 720px)
+	{ .spacer{
+		height: 200px;	
+		}
+	}
+	
   </style>
 </head>
 <body>
   <div class="header">
     <!-- Left images -->
-    <a href="CompositionWorks3.html"><img src="Assets/Quarter_note_with_upwards_stem_works.svg.PNG" alt="Link 1" style="width: 30px; margin-right: 40px;"></a>
-    <a href="UnderConstruciton.html"><img src="Assets/Quarter_note_with_upwards_stem_Media.svg - Copy.PNG" alt="Link 2" style="width: 30px;"></a>
+	<div style="flex-container;">
+		<a href="CompositionWorks2.html"><img src="Assets/Quarter_note_with_upwards_stem_works.svg.png" alt="Link 1" style="width: 30px; margin-right: 40px;"></a>
+		<a href="#link2"><img src="Assets/Quarter_note_with_upwards_stem_Media.svg - Copy.png" alt="Link 2" style="width: 30px;"></a>
+	</div>
 
     <!-- Center text -->
     <div class="glitch-text">Liam Kornoely</div>
 
     <!-- Right images -->
-    <a href="CompositionBio.html"><img src="Assets/Quarter_note_with_upwards_stem_Bio.svg.PNG" alt="Link 3" style="width: 30px; margin-right: 40px;"></a>
-    <a href="UnderConstruciton.html"><img src="Assets/Quarter_note_with_upwards_stem_Press.svg - Copy.PNG" alt="Link 4" style="width: 30px;"></a>
-  </div>
+	<div style="flex-container;">
+		<a href="CompositionBio.html"><img src="Assets/Quarter_note_with_upwards_stem_Bio.svg.png" alt="Link 3" style="width: 30px; margin-right: 40px;"></a>
+		<a href="#link4"><img src="Assets/Quarter_note_with_upwards_stem_Press.svg - Copy.png" alt="Link 4" style="width: 30px;"></a>
+	</div>
+ </div>
 
-	<div style="height: 100px;"></div>
+	<div class="spacer"></div>
 
   <div class="container">
     <div class="container">
@@ -156,12 +174,10 @@
 	<!-- Electronic -->
     <div class="super-section">
 		<div class="super-section-title">Electronic Works</div>
-		<div class="columns">
-        <!-- Column 1 -->
         <div class="column">
 			<!-- Hyper Train -->
 			<div class="dropdown">
-				<div class="dropdown-header" onclick="toggleDropdown(this)">Hyper Train - Mellophone solo and Fixed Media</div>
+				<div class="dropdown-header" onclick="toggleDropdown(this)"><b>Hyper Train </b><br> Mellophone solo and Fixed Media</div>
 				<div class="dropdown-content">
 					<div class="flex-container" style="border: 2px solid; border-style: outset; margin: 30px; background-color: #cccbca;">
 						<div style="margin: 5px; width: 50%;">
@@ -183,7 +199,7 @@
 			</div>
 			<!-- methane Rain -->
 			<div class="dropdown">
-				<div class="dropdown-header" onclick="toggleDropdown(this)">Methane Rain - Fixed Media</div>
+				<div class="dropdown-header" onclick="toggleDropdown(this)"><b>Methane Rain </b><br> Fixed Media</div>
 				<div class="dropdown-content">
 					<div class="flex-container" style="border: 2px solid; border-style: outset; margin: 30px; background-color: #cccbca;">
 						<div style="margin: 5px; width: 50%;">
@@ -199,7 +215,7 @@
 			</div>
 			<!-- Dreaming of Pirates and Cowboys -->
 			<div class="dropdown">
-				<div class="dropdown-header" onclick="toggleDropdown(this)">Dreaming of Pirates and Cowboys - Clarinet, Baritone Saxophone, and Fixed Media</div>
+				<div class="dropdown-header" onclick="toggleDropdown(this)"><b>Dreaming of Pirates and Cowboys </b><br> Clarinet, Baritone Saxophone, and Fixed Media</div>
 				<div class="dropdown-content">
 					<div class="flex-container" style="border: 2px solid; border-style: outset; margin: 30px; background-color: #cccbca;">
 						<div style="margin: 5px; width: 50%;">
@@ -213,13 +229,9 @@
 					</div>
 				</div>
 			</div>
-		</div>
-	  
-	  <!-- Column 2 -->
-        <div class="column">
 			<!-- Winters first snow -->
 			<div class="dropdown">
-				<div class="dropdown-header" onclick="toggleDropdown(this)">Winters First Snow - Fixed Media</div>
+				<div class="dropdown-header" onclick="toggleDropdown(this)"><b>Winters First Snow </b><br> Fixed Media</div>
 				<div class="dropdown-content">
 					<div class="flex-container" style="border: 2px solid; border-style: outset; margin: 30px; background-color: #cccbca;">
 					<div style="margin: 5px; width: 50%;">
@@ -235,7 +247,7 @@
 			</div>
 			<!-- A day in the Life -->
 			<div class="dropdown">
-				<div class="dropdown-header" onclick="toggleDropdown(this)">A Day in the Life - Fixed Media</div>
+				<div class="dropdown-header" onclick="toggleDropdown(this)"><b>A Day in the Life </b><br> Fixed Media</div>
 				<div class="dropdown-content">
 					<div class="flex-container" style="border: 2px solid; border-style: outset; margin: 30px; background-color: #cccbca;">
 					<div style="margin: 5px; width: 50%;">
@@ -249,7 +261,6 @@
 					</div>
 				</div>
 			</div>
-		  </div>
 		</div>
 	</div>
 	
@@ -259,11 +270,10 @@
     <div class="super-section">
       <div class="super-section-title">Chamber Music</div>
       <div class="columns">
-        <!-- Column 1 -->
         <div class="column">
 		<!-- Coruscating Sky -->
           <div class="dropdown">
-            <div class="dropdown-header" onclick="toggleDropdown(this)">Coruscaring Sky - Brass Quintet</div>
+            <div class="dropdown-header" onclick="toggleDropdown(this)"><b>Coruscaring Sky </b><br> Brass Quintet</div>
             <div class="dropdown-content">
               <div class="flex-container" style="border: 2px solid; border-style: outset; margin: 30px; background-color: #cccbca;">
 				<div style="margin: 10px; width: 50%;">
@@ -283,7 +293,7 @@
           </div>
 		  <!-- Snoozle -->
           <div class="dropdown">
-            <div class="dropdown-header" onclick="toggleDropdown(this)">Snoozle - Harp Solo</div>
+            <div class="dropdown-header" onclick="toggleDropdown(this)"><b>Snoozle </b><br> Harp Solo</div>
             <div class="dropdown-content">
               <div class="flex-container" style="border: 2px solid; border-style: outset; margin: 30px; background-color: #cccbca;">
 					<div style="margin: 10px; width: 50%;">
@@ -304,7 +314,7 @@
           </div>
 		  <!-- Illusions -->
           <div class="dropdown">
-            <div class="dropdown-header" onclick="toggleDropdown(this)">Illusions - Soprano Solo</div>
+            <div class="dropdown-header" onclick="toggleDropdown(this)"><b>Illusions </b><br> Soprano Solo</div>
             <div class="dropdown-content">
               <div class="flex-container" style="border: 2px solid; border-style: outset; margin: 30px; background-color: #cccbca;">
 					<div style="margin: 10px; width: 50%;">
@@ -323,12 +333,10 @@
 				</div>
             </div>
           </div>
-        </div>
-        <!-- Column 2 -->
-        <div class="column">
-          <div class="dropdown">
-			<!-- Iridecent River -->
-            <div class="dropdown-header" onclick="toggleDropdown(this)">Iridecent River - String Quartet</div>
+		  <!-- Iridecent River -->
+		  <div class="dropdown">
+			
+            <div class="dropdown-header" onclick="toggleDropdown(this)"><b>Iridecent River </b><br> String Quartet</div>
             <div class="dropdown-content">
               <div style="border: 2px; solid; border-style: ridge; margin: 1%; background-color: #f0f0f0;">
 			<div class="flex-container" style="border: 2px solid; border-style: outset; margin: 30px; background-color: #cccbca;">
@@ -360,7 +368,7 @@
           </div>
 		  <!-- Walking With Giants -->
           <div class="dropdown">
-            <div class="dropdown-header" onclick="toggleDropdown(this)">Walking with Giants - Brass Quintet</div>
+            <div class="dropdown-header" onclick="toggleDropdown(this)"><b>Walking with Giants </b><br> Brass Quintet</div>
 				<div class="dropdown-content">
 				  <div class="flex-container" style="border: 2px solid; border-style: outset; margin: 30px; background-color: #cccbca;">
 				<div style="margin: 10px; width: 50%;">
@@ -378,7 +386,7 @@
 			</div>
             </div>
           </div>
-        </div>
+		</div>
       </div>
     </div>
 
@@ -388,10 +396,10 @@
     <div class="super-section">
       <div class="super-section-title">Large Ensemble</div>
       <div class="columns">
-        <!-- Column 1 -->
         <div class="column">
+		<!-- Space Cadet -->
           <div class="dropdown">
-            <div class="dropdown-header" onclick="toggleDropdown(this)">Space Cadet - Chamber orchestra</div>
+            <div class="dropdown-header" onclick="toggleDropdown(this)"><b>Space Cadet </b><br> Chamber orchestra</div>
             <div class="dropdown-content">
               <div class="flex-container" style="border: 2px solid; border-style: outset; margin: 30px; background-color: #cccbca;">
 				<div style="margin: 10px; width: 50%;">
