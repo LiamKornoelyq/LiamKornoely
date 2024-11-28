@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Under Construction</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(45deg, red, purple, blue);
+      background-size: 400% 400%;
+      animation: gradientAnimation 6s ease infinite;
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+      animation: blinkText 1.5s step-start infinite;
+      text-align: center;
+    }
+
+    .back-button {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: #ffffff;
+      color: #ff6f61;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-size: 1rem;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .back-button:hover {
+      background-color: #ff6f61;
+      color: #ffffff;
+    }
+
+    @keyframes gradientAnimation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    @keyframes blinkText {
+      50% { opacity: 0.6; }
+    }
+  </style>
+</head>
+<body>
+  <a href="CompositionMainPage3.html" class="back-button">Back</a>
+  <h1>This page is currently under construction. Please check again later.</h1>
+</body>
+</html>
